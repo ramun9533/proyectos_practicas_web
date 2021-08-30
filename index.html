@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asqueroso formulario </title>
+<link rel="stylesheet" href="styles.css">
+<!--  "heref" es para ligar a la hoja de datos . describe la relación que mantiene el documento de destino con el documento presente (el que enlaza)-->
+</head>
+<body >
+    <!--<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\"></head> -->
+    
+   <!-- <div class=""> -->
+       
+  <div class="ventana" id="vent">
+<div id="cerrar"> <a href="javascript:cerrar();"><img src=" /home/ramun/Documentos/web/imagenes/error.png" alt=""> </a> </div>
+Enviado correctamente
+  </div>
+      
+        <form class="btn" ; action="/XVideos">
+            <!-- "action" a donde manda el formulario en el servidor-->
+          
+        <li>    
+                <label for="name">Nombre:</label>
+            <!-- "for" indica el elemento de formulario que describe esta etiqueta-->
+                
+                <input type="text" id="name" name="user_name">
+          
+            </li>
+
+              <li>
+                <label for="surnames">Apellidos</label>
+                
+                <input type="text" id="surname" name="surname">
+                <!-- id y name son para el servidor ,y puedes er quitados,pero en esta ocasion los dejo para el recuerdo y por que me vale madres-->
+              
+            
+            </li>
+            <li>
+           <label for="mail">Correo</label>
+           <input type="text" id="mail" name="user_mail">
+         </li>
+         <li>
+           <label for="date">Fecha de nacimiento:</label>
+           <input type="text" id="date" name="user_date">
+         </li>
+         <li>
+            <label for="age">Edad:</label>
+            <input type="text" id="age" name="user_age">
+          </li>
+         <li>
+           <label for="msg">Mensaje</label>
+           <textarea id="msg" name="user_message"></textarea>
+        
+      
+      
+       
+        <!-- "type submit" sirve para enviar el formulario una vez lleno-->
+ <!--<button for="usr" style="text= centrar" type="submit" type="button" id="send" name="pollo"> -->
+           
+           
+        </li>
+        <div class="relative"> 
+        <li  align="center" class="button">
+            <button href="javascript:abrir()" type="submit">Enviar</button>
+          </li>
+        </div>
+    </form>
+<script>
+fuction abrir(){
+
+    document.getElementById("vent").style.display="block";
+
+}
+function cerrar(){
+
+    document.getElementById("vent").style.display="none";
+
+}
+</script>
+
+</body>
+</html>
