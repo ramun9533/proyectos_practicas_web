@@ -11,46 +11,48 @@
 <body >
     <!--<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\"></head> -->
     
-   <!-- <div class=""> -->
+  
        
-  <div class="ventana" id="vent">
-<div id="cerrar"> <a href="javascript:cerrar();"><img src=" /home/ramun/Documentos/web/imagenes/error.png" alt=""> </a> </div>
+ <!-- <div class="ventana" id="vent"> -->
+<!-- <div id="cerrar"> <a href="javascript:cerrar();"><img src=" /home/ramun/Documentos/web/imagenes/error.png" alt=""> </a> </div>
 Enviado correctamente
   </div>
+  -->
       
-        <form class="btn" ; action="/XVideos">
-            <!-- "action" a donde manda el formulario en el servidor-->
+        <!-- <form class="btn" ; action="/XVideos"> -->
+          <form class="" ; action="">
+          <!-- "action" a donde manda el formulario en el servidor-->
           
         <li>    
-                <label for="name">Nombre:</label>
+                <label >Nombre:</label>
             <!-- "for" indica el elemento de formulario que describe esta etiqueta-->
                 
-                <input type="text" id="name" name="user_name">
+                <input type="" name="">
           
             </li>
 
               <li>
-                <label for="surnames">Apellidos</label>
+                <label >Apellidos</label>
                 
-                <input type="text" id="surname" name="surname">
+                <input type=""  name="">
                 <!-- id y name son para el servidor ,y puedes er quitados,pero en esta ocasion los dejo para el recuerdo y por que me vale madres-->
               
             
             </li>
             <li>
-           <label for="mail">Correo</label>
-           <input type="text" id="mail" name="user_mail">
+           <label for="">Correo</label>
+           <input type="text"  name="user_mail">
          </li>
          <li>
-           <label for="date">Fecha de nacimiento:</label>
-           <input type="text" id="date" name="user_date">
+           <label for="">Fecha de nacimiento:</label>
+           <input type="text"  name="user_date">
          </li>
          <li>
-            <label for="age">Edad:</label>
-            <input type="text" id="age" name="user_age">
+            <label for="">Edad:</label>
+            <input type="text"  name="user_age"> 
           </li>
          <li>
-           <label for="msg">Mensaje</label>
+           <label for="">Mensaje</label>
            <textarea id="msg" name="user_message"></textarea>
         
       
@@ -62,13 +64,42 @@ Enviado correctamente
            
         </li>
         <div class="relative"> 
-        <li  align="center" class="button">
-            <button href="javascript:abrir()" type="submit">Enviar</button>
-          </li>
+        <li align="center" style="margin-top: 0; "class="">
+          <!-- <a > <button    type="">Enviar</button> </a>-->
+          <a href="#IrVentanaFlotante"><img src="imagenes/enviar.png"> </a>
+                    
+            
+            <div  id="IrVentanaFlotante" class="modal">
+              <div   class="ventana">
+               
+               <!-- <a href="#IrVentanaFlotante" >
+                 <img src="imagenes/error.png">
+               </a> -->
+               <div id="cerrar" >
+                 <a href="#" style='text-decoration: none;'>
+                X
+                </a> 
+                            </div>
+                <h3 >Enviado Correctamente</h3> 
+                <!-- <p>Sus datos estan protegidos por el INAI</p> -->
+              
+              </div>  
+            </div>
+        
+        </li>
         </div>
-    </form>
-<script>
-fuction abrir(){
+        <!-- <div id="IrVentanaFlotante" class="modal">
+          <div class="ventana">
+            <a href="#" style='text-decoration:none;'>
+            X
+            </a>
+            <h2>Ventana</h2>
+            <p>Detalle de las opciones</p>
+          </div> --> 
+  </form>
+  
+<!-- <script>
+function abrir(){
 
     document.getElementById("vent").style.display="block";
 
@@ -78,7 +109,7 @@ function cerrar(){
     document.getElementById("vent").style.display="none";
 
 }
-</script>
+</script>-->
 
 </body>
 </html>
